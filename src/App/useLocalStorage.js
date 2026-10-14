@@ -27,7 +27,7 @@ function useLocalStorage(itemName, initialValue){
                     setError(true);
                 }  
         }, 2000);
-    }, []);    
+    }, [initialValue, itemName]);    
 
     //funciona para actualizar locastorage y el estado.
     const saveItem = (newItem) => {
